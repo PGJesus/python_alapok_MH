@@ -5,13 +5,25 @@
 
 import random
 
-random_szam = random.randint(1, 3)
-szam = int(input("Adj egy számot! "))
+# random_szam = random.randint(1, 3)
+# szam = int(input("Adj egy számot! "))
+#
+# if random_szam < szam:
+#     print("A megadott szám nagyobb mint a random.")
+# elif random_szam == szam:
+#     print("A megadott szam egyenlő a randommal.")
+# else:
+#     print("A megadott szam kisebb a randomnál.")
+# print(random_szam)
 
-if random_szam < szam:
-    print("A megadott szám nagyobb mint a random.")
-elif random_szam == szam:
-    print("A megadott szam egyenlő a randommal.")
+erme =["fej", "írás"]
+gep = random.choice(erme)
+
+tipp = input("Fej vagy írás? ")
+
+if gep == tipp:
+    print("Win")
 else:
-    print("A megadott szam kisebb a randomnál.")
-print(random_szam)
+    print("Lose")
+
+print(f"Helyes: {gep}")
