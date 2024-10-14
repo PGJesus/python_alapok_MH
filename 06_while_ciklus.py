@@ -44,10 +44,10 @@ while szam <= 1:
 Írj egy programot, amely a felhasználótól páros számot kér be. Amennyiben a megadott szám páratlan, újra és újra
 megtörténik az adatbekérés mindaddig, amíg végül páros számot nem ad meg a felhasználó."""
 
-paros_szam = False
+befejez = False
 
-while paros_szam == False:
+while befejez == False:
     felhasznaloi_input = int(input("Kérlek adj meg egy páros számot!"))
     if felhasznaloi_input % 2 == 0:
         print("Ez biza páros.")
-        paros_szam = True
+        befejez = True
