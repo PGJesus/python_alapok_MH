@@ -31,8 +31,18 @@ b) jelenítse meg a bekért számokat (lista használata)
 """
 def harmadik():
 
-    n = int(input("Adj egy számot"))
+    folytat = True
+    össz = 0
     
+    while folytat:
+        n = int(input("Adj egy számot"))
+        össz += n
+        foly = input("Folytatod?(I/N) ")
+        if foly == "I":
+            folytat = True
+        else:
+            folytat = False
+    print(össz)
 
 """
 4. Két szám közötti számok
