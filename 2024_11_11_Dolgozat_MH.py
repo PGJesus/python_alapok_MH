@@ -23,4 +23,5 @@ def dinnye_doga():
     else:
         print("Nincs elegendő szalag.")
 
+
 dinnye_doga()
