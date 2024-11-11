@@ -7,17 +7,20 @@
 # szükség, valamint állapítsa meg, hogy elegendő szalagunk van-e a művelet
 # elvégzéséhez, és ezt is közölje a felhasználóval!
 
-atmero = float(input("Add meg a dinnye átmérőjét!(cm-ben) "))
-dinnyek_szama = int(input("Add meg a dinnyék számát! "))
-szalag_hossz = float(input("Adja meg a rendelkezésre álló szalag hosszát!(méterben) ")) * 100
 
-szukseges_hossz_cm = (2 * 3.14 * (atmero / 2) * 2 + 60) * dinnyek_szama
-szukseges_hossz_m = szukseges_hossz_cm / 100
+def dinnye_doga():
+    atmero = float(input("Add meg a dinnye átmérőjét!(cm-ben) "))
+    dinnyek_szama = int(input("Add meg a dinnyék számát! "))
+    szalag_hossz = float(input("Adja meg a rendelkezésre álló szalag hosszát!(méterben) ")) * 100
 
-print(f"A dinnyék csomagolásához szükséges szalag: {szukseges_hossz_m:.2f} méter.")
+    szukseges_hossz_cm = (2 * 3.14 * (atmero / 2) * 2 + 60) * dinnyek_szama
+    szukseges_hossz_m = szukseges_hossz_cm / 100
 
-if szalag_hossz >= szukseges_hossz_cm:
-    print("Van elég szalag.")
-else:
-    print("Nincs elegendő szalag.")
+    print(f"A dinnyék csomagolásához szükséges szalag: {szukseges_hossz_m:.2f} méter.")
 
+    if szalag_hossz >= szukseges_hossz_cm:
+        print("Van elég szalag.")
+    else:
+        print("Nincs elegendő szalag.")
+
+dinnye_doga()
